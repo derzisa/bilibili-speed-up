@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 180px; padding: 15px; font-family: sans-serif; text-align: center; }
+    input { width: 100%; padding: 5px; margin-bottom: 10px; box-sizing: border-box; text-align: center; }
+    button { width: 100%; padding: 8px; margin-bottom: 5px; cursor: pointer; background-color: #00a1d6; color: white; border: none; border-radius: 4px; }
+    button:hover { background-color: #008cb9; }
+    #resetBtn { background-color: #f45d90; }
+    #resetBtn:hover { background-color: #d84b7a; }
+  </style>
+</head>
+<body>
+  <h4 style="margin-top: 0;">设置播放倍速</h4>
+  <input type="number" id="speedInput" min="0.1" max="16" step="0.5" value="3" placeholder="输入倍数 (如: 3)">
+  <button id="applyBtn">应用倍速</button>
+  <button id="resetBtn">恢复 1x</button>
+  <script src="popup.js"></script>
+</body>
+</html>
